@@ -38,5 +38,32 @@ nav a {
 main {
     height: 100vh;
     overflow-y: scroll;
-    padding-bottom: 200px;
+    padding: 0 10px 200px 20px;
+}
+
+code pre {
+    background-color: rgb(221, 221, 221);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Media Query */
+@media (max-width: 576px) {
+
+    body {
+        flex-direction: column;
+        scroll-behavior: smooth;
+    }
+
+    nav {
+        width: auto;
+        border: 0;
+        overflow-y: scroll;
+        height: 200px;
+    }
+
+    main {
+        overflow-y: unset;
+    }
+
 }
