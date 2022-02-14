@@ -85,7 +85,8 @@
 
             <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
 
-            <code><pre>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined</pre></code>
+            <code><pre>if (true) { let y = 5; } console.log(y); 
+// ReferenceError: y is not defined</pre></code>
         </section>
 
         <section id="Global_variables" class="main-section">
@@ -108,13 +109,16 @@
                 
             You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
 
-            <code><pre>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; 
-// THIS WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements}
+            <code><pre>// THIS WILL CAUSE AN ERROR function f() {}; 
+const f = 5; 
+// THIS WILL CAUSE AN ERROR ALSO function f() 
+{ const g = 5; var g; //statements}
             </pre></code>
 
             <p>However, object attributes are not protected, so the following statement is executed without problems.</p>
 
-            <code><pre>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</pre></code>
+            <code><pre>const MY_OBJECT = {"key": "value"}; 
+MY_OBJECT.key = "otherValue";</pre></code>
         </section>
 
     </main>

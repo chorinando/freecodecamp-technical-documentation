@@ -53,13 +53,14 @@ code pre {
     body {
         flex-direction: column;
         scroll-behavior: smooth;
+        /* width: 100vw; */
     }
 
     nav {
-        width: auto;
         border: 0;
         overflow-y: scroll;
         height: 200px;
+        width: 100vw;
     }
 
     main {
